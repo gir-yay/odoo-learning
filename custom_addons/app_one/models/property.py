@@ -7,8 +7,9 @@ class Property(models.Model):
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Property'
 
-    #reserved fields
-    name = fields.Char(required=1, tracking=1)
+    # reserved fields
+    ref = fields.Char(default='New', readonly=1)
+    name = fields.Char(required=1, tracking=1, translate=1)
     active = fields.Boolean(default=True)
 
     description = fields.Text(size=150, default='new')
@@ -48,8 +49,8 @@ class Property(models.Model):
         ('unique_name', 'unique("name")', 'Name already taken')
     ]
 
-    #@api.onchange('view_field_name')
-    #_function()
+    # @api.onchange('view_field_name')
+    # _function()
 
     @api.depends('expected_price', 'selling_price')
     def _compute_diff(self):
@@ -64,26 +65,63 @@ class Property(models.Model):
 
     def action_draft(self):
         for rec in self:
+            rec.create_history_record(rec.state, 'draft')
             rec.state = 'draft'
 
     def action_pending(self):
         for rec in self:
+            rec.create_history_record(rec.state, 'pending')
             rec.state = 'pending'
 
     def action_done(self):
         for rec in self:
+            rec.create_history_record(rec.state, 'done')
             rec.state = 'done'
 
     def action_closed(self):
         for rec in self:
+            rec.create_history_record(rec.state, 'closed')
             rec.state = 'closed'
 
     def check_expected_selling_date(self):
         property_ids = self.search([])
         for rec in property_ids:
             if rec.expected_selling_date < fields.date.today():
-                         rec.sold_late = True
+                rec.sold_late = True
 
+    # overriding the create function to generate a seq once the new property is saved
+    @api.model
+    def create(self, vals):
+        res = super(Property, self).create(vals)
+        if res.ref == 'New':
+            res.ref = self.env['ir.sequence'].next_by_code('property_seq')
+        return res
+
+    def create_history_record(self, old_state, new_state, reason=""):
+        for rec in self:
+            rec.env['property.history'].create({
+                'user_id': rec.env.uid,
+                'property_id': rec.id,
+                'old_state': old_state,
+                'new_state': new_state,
+                'reason': reason or ""
+
+            })
+
+    def action_open_change_state_wizard(self):
+        action = self.env['ir.actions.actions']._for_xml_id('app_one.property_change_state_wizard_action')
+        action['context'] = {
+            'default_property_id': self.id
+        }
+        return action
+
+
+    def action_open_related_owner(self):
+        action = self.env['ir.actions.actions']._for_xml_id('app_one.owner_action')
+        view_id = self.env.ref('app_one.owner_view_form').id
+        action['res_id'] = self.owner_id.id
+        action['views'] = [[view_id, 'form']]
+        return action
 
 class PropertyLines(models.Model):
     _name = 'property.line'

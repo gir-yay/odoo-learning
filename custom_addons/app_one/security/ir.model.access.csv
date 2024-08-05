@@ -3,3 +3,5 @@ access_property,access_property,model_property,,1,1,1,1
 access_owner,access_owner,model_owner,,1,1,1,1
 access_tag,access_tag,model_tag,,1,1,1,1
 access_property_line,access_property_line,model_property_line,,1,1,1,1
+access_property_history,access_property_history,model_property_history,,1,1,1,1
+access_change_state,access_change_state,model_change_state,,1,1,1,1
