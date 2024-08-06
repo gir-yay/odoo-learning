@@ -1,0 +1,18 @@
+<odoo>
+    <menuitem
+            id="beneficiary_root_menu"
+            name="Beneficiary"
+
+    />
+
+    <menuitem
+            id="beneficiaries_menu"
+            name="Beneficiaries"
+            parent="beneficiary_root_menu"
+    />
+    <menuitem
+            id="configuration_menu"
+            name="Configuration"
+            parent="beneficiary_root_menu"
+    />
+</odoo>

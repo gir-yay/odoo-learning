@@ -1,0 +1,81 @@
+<odoo>
+
+    <record id="beneficiary_view_tree" model="ir.ui.view">
+        <field name="name">beneficiary list</field>
+        <field name="model">beneficiary</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+
+    </record>
+
+    <record id="beneficiary_view_form" model="ir.ui.view">
+        <field name="name">beneficiary form</field>
+        <field name="model">beneficiary</field>
+        <field name="arch" type="xml">
+            <form>
+               <sheet>
+
+                   <div class="oe_title">
+                        <label for="name"/>
+                           <h3>
+                               <field name="name"/>
+                           </h3>
+                   </div>
+                   <group>
+                       <group string="General info">
+                           <field name="name"/>
+
+                       </group>
+                   </group>
+
+
+                   <notebook>
+                       <page string="Notes">
+                           <field name="line_ids">
+                               <tree editable="bottom">
+                                   <field name="title"/>
+                                   <field name="description"/>
+                               </tree>
+                           </field>
+                       </page>
+                   </notebook>
+
+               </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+
+                </div>
+            </form>
+        </field>
+
+    </record>
+
+    <record id="beneficiary_view_search" model="ir.ui.view">
+        <field name="name">beneficiary search</field>
+        <field name="model">beneficiary</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+
+        </field>
+    </record>
+
+
+    <record id="beneficiary_action" model="ir.actions.act_window">
+        <field name="name">Beneficiary action</field>
+        <field name="res_model">beneficiary</field>
+    </record>
+
+    <menuitem
+            id="beneficiary_menu_item"
+            name="Beneficiaries"
+            parent="beneficiaries_menu"
+            action="beneficiary_action"
+    />
+</odoo>

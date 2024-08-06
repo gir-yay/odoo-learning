@@ -1,0 +1,46 @@
+<odoo>
+
+    <record id="disability_view_list" model="ir.ui.view">
+        <field name="name">disability list</field>
+        <field name="model">disability</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+
+
+            </tree>
+        </field>
+
+    </record>
+
+    <record id="disability_view_form" model="ir.ui.view">
+        <field name="name">disability form</field>
+        <field name="model">disability</field>
+        <field name="arch" type="xml">
+            <form>
+               <sheet>
+                   <group>
+                       <group>
+                           <field name="name"/>
+
+                       </group>
+                   </group>
+               </sheet>
+            </form>
+        </field>
+
+    </record>
+
+
+    <record id="disability_action" model="ir.actions.act_window">
+        <field name="name">disability action</field>
+        <field name="res_model">disability</field>
+    </record>
+
+    <menuitem
+            id="disability_menu_item"
+            name="Disability type"
+            parent="configuration_menu"
+            action="disability_action"
+    />
+</odoo>
