@@ -5,13 +5,14 @@ class Beneficiary(models.Model):
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Beneficiary'
     _rec_name = 'name_ar'
+    active = fields.Boolean(default=True)
 
     project_number = fields.Integer()
-    name = fields.Char()
-    name_ar = fields.Char()
+    name_ar = fields.Char(required=1, tracking=1)
+    name_fr = fields.Char()
     cin = fields.Char()
     date_of_birth = fields.Char()
-    place_of_birth = fields.Char()
+    place_of_birth = fields.Char(translate=1)
     birth_certificate_number = fields.Char()
     age = fields.Integer()
     gender = fields.Selection([
@@ -19,12 +20,8 @@ class Beneficiary(models.Model):
         ('female', 'Female')
     ])
     phone = fields.Char()
-    id_number = fields.Char()
-    program_type = fields.Selection([
-        ('inclusive_education', 'Inclusive education'),
-        ('special_education', 'Special education')
-    ])
 
+    id_number = fields.Char()
     type_of_coverage = fields.Selection([
         ('amo', 'AMO'),
         ('amo_tadamoune', 'AMO TADAMOUNE'),
@@ -39,25 +36,36 @@ class Beneficiary(models.Model):
         ('yes', 'Yes'),
         ('no', 'No')
     ])
+    presence_of_chronic_disease = fields.Char(translate=1)
 
-    presence_of_chronic_disease = fields.Char()
-    mother_name = fields.Char()
+    mother_name_fr = fields.Char()
+    mother_name_ar = fields.Char()
     mother_cin = fields.Char()
-    mother_profession = fields.Char()
-    mother_employer = fields.Char()
-    father_name = fields.Char()
+    mother_profession = fields.Char(translate=1)
+    mother_employer = fields.Char(translate=1)
+    father_name_ar = fields.Char()
+    father_name_fr = fields.Char()
     father_cin = fields.Char()
-    father_profession = fields.Char()
-    father_employer = fields.Char()
-    address = fields.Char()
+    father_profession = fields.Char(translate=1)
+    father_employer = fields.Char(translate=1)
+    address = fields.Char(translate=1)
+
+    disability_type = fields.Many2many('disability')
+    program_type = fields.Selection([
+        ('inclusive_education', 'Inclusive education'),
+        ('special_education', 'Special education')
+    ])
     subscription_status = fields.Selection([
         ('accepted', 'Accepted'),
         ('waiting_list', 'Waiting list')
-    ])
-    unit = fields.Char()
+    ], default='waiting_list', tracking=1)
+
     massar_number = fields.Char()
-    grade_level = fields.Char()
-    institution_name = fields.Char()
+    grade_level = fields.Char(translate=1)
+    institution_name = fields.Char(translate=1)
+
+    unit = fields.Char(translate=1)
+    section_name = fields.Many2many('section')
     caregiver_name = fields.Many2one('hr.employee')
     technical_component = fields.Many2one('hr.employee')
 
@@ -66,9 +74,6 @@ class Beneficiary(models.Model):
     physical_therapy = fields.Many2one('hr.employee')
     psycho_motor = fields.Many2one('hr.employee')
     psychologist = fields.Many2one('hr.employee')
-
-    disability_type = fields.Many2one('disability')
-    section_name = fields.Many2one('section')
 
 
     line_ids = fields.One2many('beneficiary.line', 'beneficiary_id')

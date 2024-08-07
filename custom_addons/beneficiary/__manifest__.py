@@ -4,7 +4,7 @@
     'category': '',
     'author': 'gg',
     'depends': [
-        'base', 'mail'
+        'base', 'mail', 'hr'
     ],
     'data': [
         'security/ir.model.access.csv',

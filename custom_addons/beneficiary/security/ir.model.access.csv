@@ -1,4 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_beneficiary,access_beneficiary,model_beneficiary,,1,1,1,1
+access_beneficiary_line,access_beneficiary_line,model_beneficiary_line,,1,1,1,1
 access_disability,access_disability,model_disability,,1,1,1,1
 access_section,access_section,model_section,,1,1,1,1

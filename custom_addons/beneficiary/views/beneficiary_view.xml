@@ -5,7 +5,34 @@
         <field name="model">beneficiary</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="name"/>
+                <field name="project_number"/>
+                <field name="name_ar"/>
+                <field name="name_fr"/>
+                <field name="date_of_birth"/>
+                <field name="place_of_birth" optional="1"/>
+                <field name="birth_certificate_number" optional="1"/>
+                <field name="age"/>
+                <field name="gender"/>
+                <field name="phone"/>
+                <field name="id_number" optional="1"/>
+                <field name="type_of_coverage" optional="1"/>
+                <field name="number_of_registered_family_members" optional="1"/>
+                <field name="direct_support"/>
+                <field name="presence_of_chronic_disease"/>
+                <field name="mother_name_fr" optional="1"/>
+                <field name="mother_name_ar" optional="1"/>
+                <field name="mother_cin" optional="1"/>
+                <field name="mother_profession" optional="1"/>
+                <field name="mother_employer" optional="1"/>
+                <field name="father_name_ar" optional="1"/>
+                <field name="father_name_fr" optional="1"/>
+                <field name="father_cin" optional="1"/>
+                <field name="father_profession" optional="1"/>
+                <field name="father_employer" optional="1"/>
+                <field name="address" optional="1"/>
+                <field name="disability_type"/>
+                <field name="program_type"/>
+                <field name="subscription_status"/>
             </tree>
         </field>
 
@@ -19,18 +46,55 @@
                <sheet>
 
                    <div class="oe_title">
-                        <label for="name"/>
-                           <h3>
-                               <field name="name"/>
-                           </h3>
+                        <label for="name_ar"/>
+                       <h2>
+                           <field name="name_ar"/>
+                       </h2>
+                       <label for="name_fr"/>
+                       <h3>
+                           <field name="name_fr"/>
+                       </h3>
                    </div>
                    <group>
-                       <group string="General info">
-                           <field name="name"/>
+                       <group string="Personal information">
+                           <field name="project_number"/>
+                           <field name="date_of_birth"/>
+                           <field name="place_of_birth"/>
+                           <field name="birth_certificate_number"/>
+                           <field name="age"/>
+                           <field name="gender"/>
+                           <field name="phone"/>
+                           <field name="active" invisible="1"/>
+                       </group>
+                       <group string="Family information">
+                           <field name="mother_name_fr"/>
+                           <field name="mother_name_ar"/>
+                           <field name="mother_cin"/>
+                           <field name="mother_profession"/>
+                           <field name="mother_employer"/>
+                           <field name="father_name_ar"/>
+                           <field name="father_name_fr"/>
+                           <field name="father_cin"/>
+                           <field name="father_profession"/>
+                           <field name="father_employer"/>
+                           <field name="address"/>
+                       </group>
 
+                   </group>
+                   <group>
+                       <group string="Program Information">
+                           <field name="disability_type" widget="many2many_tags"/>
+                           <field name="program_type"/>
+                           <field name="subscription_status"/>
+                       </group>
+                       <group string="Health Insurance Information">
+                           <field name="id_number"/>
+                           <field name="type_of_coverage"/>
+                           <field name="number_of_registered_family_members"/>
+                           <field name="direct_support"/>
+                           <field name="presence_of_chronic_disease"/>
                        </group>
                    </group>
-
 
                    <notebook>
                        <page string="Notes">
@@ -40,6 +104,30 @@
                                    <field name="description"/>
                                </tree>
                            </field>
+                       </page>
+                       <page string="Program type">
+                           <group>
+                               <group string="Inclusive education">
+                                   <field name="unit"/>
+                                   <field name="section_name" widget="many2many_tags"/>
+                                   <field name="caregiver_name"/>
+                                   <field name="technical_component"/>
+                               </group>
+                               <group string="Special education">
+                                   <field name="massar_number"/>
+                                   <field name="grade_level"/>
+                                   <field name="institution_name"/>
+                               </group>
+                           </group>
+                       </page>
+                       <page string="Type of intervention">
+                           <group>
+                               <field name="occupational_therapy"/>
+                               <field name="speech_therapy"/>
+                               <field name="physical_therapy"/>
+                               <field name="psycho_motor"/>
+                               <field name="psychologist"/>
+                           </group>
                        </page>
                    </notebook>
 
@@ -60,7 +148,68 @@
         <field name="model">beneficiary</field>
         <field name="arch" type="xml">
             <search>
-                <field name="name"/>
+                <field name="name_ar"/>
+                <field name="name_fr"/>
+                <field name="date_of_birth"/>
+                <field name="age"/>
+                <field name="phone"/>
+                <filter name="group_by_gender"
+                        string="Gender"
+                        context="{'group_by' : 'gender'}"
+                />
+                <filter name="group_by_direct_support"
+                        string="Direct support"
+                        context="{'group_by' : 'direct_support'}"
+                />
+                <filter name="group_by_type_of_coverage"
+                        string="Type of coverage"
+                        context="{'group_by' : 'type_of_coverage'}"
+                />
+                <filter name="group_by_disability_type"
+                        string="Disability type"
+                        context="{'group_by' : 'disability_type'}"
+                />
+                <filter name="group_by_program_type"
+                        string="Program type"
+                        context="{'group_by' : 'program_type'}"
+                />
+                <filter name="group_by_subscription_status"
+                        string="Subscription status"
+                        context="{'group_by' : 'subscription_status'}"
+                />
+                <filter name="group_by_unit"
+                        string="Unit"
+                        context="{'group_by' : 'unit'}"
+                />
+                <filter name="group_by_section_name"
+                        string="Section name"
+                        context="{'group_by' : 'section_name'}"
+                />
+                <filter name="group_by_caregiver_name"
+                        string="Caregiver name"
+                        context="{'group_by' : 'caregiver_name'}"
+                />
+                <filter name="group_by_technical_component"
+                        string="Technical component"
+                        context="{'group_by' : 'technical_component'}"
+                />
+
+                <filter name="is_female" string="Female" domain="[('gender', '=', 'female')]"/>
+                <filter name="is_male" string="Male" domain="[('gender', '=', 'male')]"/>
+                <separator/>
+                <filter name="has_direct_support" string="Direct support" domain="[('direct_support', '=', 'yes')]"/>
+                <filter name="has_not_direct_support" string="No Direct support" domain="[('direct_support', '=', 'no')]"/>
+                <separator/>
+                <filter name="subscription_status_accepted" string="Subscribed" domain="[('subscription_status', '=', 'accepted')]"/>
+                <filter name="subscription_status_waiting_list" string="Still in the waiting list" domain="[('subscription_status', '=', 'waiting_list')]"/>
+                <separator/>
+                <filter name="program_type_ie" string="Inclusive education" domain="[('program_type', '=', 'inclusive_education')]"/>
+                <filter name="program_type_se" string="Special education" domain="[('program_type', '=', 'special_education')]"/>
+                <separator/>
+                <filter name="active" string="Archived" domain="[('active', '=', 'True')]"/>
+                <filter name="not_active" string="Not archived" domain="[('active', '=', 'False')]"/>
+                <separator/>
+
             </search>
 
         </field>

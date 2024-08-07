@@ -1,0 +1,680 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* beneficiary
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-07 13:15+0000\n"
+"PO-Revision-Date: 2024-08-07 14:58+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#. module: beneficiary
+#: model:ir.model.fields.selection,name:beneficiary.selection__beneficiary__type_of_coverage__amo
+msgid "AMO"
+msgstr ""
+
+#. module: beneficiary
+#: model:ir.model.fields.selection,name:beneficiary.selection__beneficiary__type_of_coverage__amo_tadamoune
+msgid "AMO TADAMOUNE"
+msgstr ""
+
+#. module: beneficiary
+#: model:ir.model.fields.selection,name:beneficiary.selection__beneficiary__type_of_coverage__amo_d
+msgid "AMO/D"
+msgstr ""
+
+#. module: beneficiary
+#: model:ir.model.fields.selection,name:beneficiary.selection__beneficiary__type_of_coverage__amo_p
+msgid "AMO/P"
+msgstr ""
+
+#. module: beneficiary
+#: model:ir.model.fields.selection,name:beneficiary.selection__beneficiary__subscription_status__accepted
+msgid "Accepted"
+msgstr "Accepté"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__message_needaction
+msgid "Action Needed"
+msgstr "Action Nécessaire"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__active
+msgid "Active"
+msgstr "Actif"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__activity_ids
+msgid "Activities"
+msgstr "Activités"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Décoration d’exception d’activité"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__activity_state
+msgid "Activity State"
+msgstr "État de l’activité"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icône de type d’activité"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__address
+msgid "Address"
+msgstr "Adresse"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__age
+msgid "Age"
+msgstr "Âge"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Archived"
+msgstr "Archivé"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre de pièces jointes"
+
+#. module: beneficiary
+#: model:ir.ui.menu,name:beneficiary.beneficiaries_menu
+#: model:ir.ui.menu,name:beneficiary.beneficiary_menu_item
+msgid "Beneficiaries"
+msgstr "Bénéficiaires"
+
+#. module: beneficiary
+#: model:ir.model,name:beneficiary.model_beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary_line__beneficiary_id
+#: model:ir.ui.menu,name:beneficiary.beneficiary_root_menu
+msgid "Beneficiary"
+msgstr "Bénéficiaire"
+
+#. module: beneficiary
+#: model:ir.actions.act_window,name:beneficiary.beneficiary_action
+msgid "Beneficiary action"
+msgstr "Action bénéficiaire"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__birth_certificate_number
+msgid "Birth Certificate Number"
+msgstr "Numéro de l'acte de naissance"
+
+#. module: beneficiary
+#: model:ir.model.fields.selection,name:beneficiary.selection__beneficiary__type_of_coverage__cnops
+msgid "CNOPS"
+msgstr ""
+
+#. module: beneficiary
+#: model:ir.model.fields.selection,name:beneficiary.selection__beneficiary__type_of_coverage__cnss
+msgid "CNSS"
+msgstr ""
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__caregiver_name
+msgid "Caregiver Name"
+msgstr "Nom du responsable"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Caregiver name"
+msgstr "Nom du responsable"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__cin
+msgid "Cin"
+msgstr "Carte d'identité nationale"
+
+#. module: beneficiary
+#: model:ir.ui.menu,name:beneficiary.configuration_menu
+msgid "Configuration"
+msgstr "Configuration"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__create_uid
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary_line__create_uid
+#: model:ir.model.fields,field_description:beneficiary.field_disability__create_uid
+#: model:ir.model.fields,field_description:beneficiary.field_section__create_uid
+msgid "Created by"
+msgstr "Crée par"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__create_date
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary_line__create_date
+#: model:ir.model.fields,field_description:beneficiary.field_disability__create_date
+#: model:ir.model.fields,field_description:beneficiary.field_section__create_date
+msgid "Created on"
+msgstr "Crée à"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__date_of_birth
+msgid "Date Of Birth"
+msgstr "Date de naissance"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary_line__description
+msgid "Description"
+msgstr "Description"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__direct_support
+msgid "Direct Support"
+msgstr "Soutien direct"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Direct support"
+msgstr "Soutien direct"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__disability_type
+msgid "Disability Type"
+msgstr "Type de handicap"
+
+#. module: beneficiary
+#: model:ir.ui.menu,name:beneficiary.disability_menu_item
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Disability type"
+msgstr "Type de handicap"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__display_name
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary_line__display_name
+#: model:ir.model.fields,field_description:beneficiary.field_disability__display_name
+#: model:ir.model.fields,field_description:beneficiary.field_section__display_name
+msgid "Display Name"
+msgstr "Nom"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_form
+msgid "Family information"
+msgstr "Informations familiales"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__father_cin
+msgid "Father Cin"
+msgstr "CIN du père"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__father_employer
+msgid "Father Employer"
+msgstr "Employeur du père"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__father_name_ar
+msgid "Father Name Ar"
+msgstr "Nom du père en Ar"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__father_name_fr
+msgid "Father Name Fr"
+msgstr "Nom du père en Fr"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__father_profession
+msgid "Father Profession"
+msgstr "Profession du père"
+
+#. module: beneficiary
+#: model:ir.model.fields.selection,name:beneficiary.selection__beneficiary__gender__female
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Female"
+msgstr "Femme"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__message_follower_ids
+msgid "Followers"
+msgstr "Abonnés"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnés (Partenaires)"
+
+#. module: beneficiary
+#: model:ir.model.fields,help:beneficiary.field_beneficiary__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__gender
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Gender"
+msgstr "Genre"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__grade_level
+msgid "Grade Level"
+msgstr "Niveau scolaire"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__has_message
+msgid "Has Message"
+msgstr "a un message"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_form
+msgid "Health Insurance Information"
+msgstr "Informations sur l’assurance maladie"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__id
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary_line__id
+#: model:ir.model.fields,field_description:beneficiary.field_disability__id
+#: model:ir.model.fields,field_description:beneficiary.field_section__id
+msgid "ID"
+msgstr "ID"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: beneficiary
+#: model:ir.model.fields,help:beneficiary.field_beneficiary__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__id_number
+msgid "Id Number"
+msgstr "Numéro identifiant"
+
+#. module: beneficiary
+#: model:ir.model.fields,help:beneficiary.field_beneficiary__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: beneficiary
+#: model:ir.model.fields,help:beneficiary.field_beneficiary__message_has_error
+#: model:ir.model.fields,help:beneficiary.field_beneficiary__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: beneficiary
+#: model:ir.model.fields.selection,name:beneficiary.selection__beneficiary__program_type__inclusive_education
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_form
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Inclusive education"
+msgstr "Éducation inclusive"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__institution_name
+msgid "Institution Name"
+msgstr "Nom de l'institution"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__message_is_follower
+msgid "Is Follower"
+msgstr "Est abonné"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__write_uid
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary_line__write_uid
+#: model:ir.model.fields,field_description:beneficiary.field_disability__write_uid
+#: model:ir.model.fields,field_description:beneficiary.field_section__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__write_date
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary_line__write_date
+#: model:ir.model.fields,field_description:beneficiary.field_disability__write_date
+#: model:ir.model.fields,field_description:beneficiary.field_section__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__line_ids
+msgid "Line"
+msgstr "Ligne"
+
+#. module: beneficiary
+#: model:ir.model.fields.selection,name:beneficiary.selection__beneficiary__gender__male
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Male"
+msgstr "Homme"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__massar_number
+msgid "Massar Number"
+msgstr "Numéro Massar"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__message_has_error
+msgid "Message Delivery error"
+msgstr "Erreur de livraison du message"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__mother_cin
+msgid "Mother Cin"
+msgstr "CIN de la mère"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__mother_employer
+msgid "Mother Employer"
+msgstr "Employeur de la mère"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__mother_name_ar
+msgid "Mother Name Ar"
+msgstr "Nom de la mère en Ar"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__mother_name_fr
+msgid "Mother Name Fr"
+msgstr "Nom de la mère en Fr"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__mother_profession
+msgid "Mother Profession"
+msgstr "Profession de la mère"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Date limite de mon activité"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_disability__name
+#: model:ir.model.fields,field_description:beneficiary.field_section__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__name_ar
+msgid "Name Ar"
+msgstr "Nom en Ar"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__name_fr
+msgid "Name Fr"
+msgstr "Nom en Fr"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Prochaine date limite d'activité"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__activity_summary
+msgid "Next Activity Summary"
+msgstr "Résumé de la prochaine activité"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__activity_type_id
+msgid "Next Activity Type"
+msgstr "Type de prochaine activité"
+
+#. module: beneficiary
+#: model:ir.model.fields.selection,name:beneficiary.selection__beneficiary__direct_support__no
+msgid "No"
+msgstr "Non"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "No Direct support"
+msgstr "Pas de soutien direct"
+
+#. module: beneficiary
+#: model:ir.model.fields.selection,name:beneficiary.selection__beneficiary__type_of_coverage__none
+msgid "None"
+msgstr "Rien"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Not archived"
+msgstr "Pas archivé"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_form
+msgid "Notes"
+msgstr "Notes"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__number_of_registered_family_members
+msgid "Number Of Registered Family Members"
+msgstr "Nombre de membres de la famille enregistrés"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'actions"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'erreurs"
+
+#. module: beneficiary
+#: model:ir.model.fields,help:beneficiary.field_beneficiary__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Nombre de messages nécessitant une action"
+
+#. module: beneficiary
+#: model:ir.model.fields,help:beneficiary.field_beneficiary__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de messages avec erreur de livraison"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__occupational_therapy
+msgid "Occupational Therapy"
+msgstr "Ergothérapie"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_form
+msgid "Personal information"
+msgstr "Informations personnelles"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__phone
+msgid "Phone"
+msgstr "Téléphone"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__physical_therapy
+msgid "Physical Therapy"
+msgstr "Kinésithérapie"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__place_of_birth
+msgid "Place Of Birth"
+msgstr "Lieu de naissance"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__presence_of_chronic_disease
+msgid "Presence Of Chronic Disease"
+msgstr "Présence de maladie chronique"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_form
+msgid "Program Information"
+msgstr "Informations sur le programme"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__program_type
+msgid "Program Type"
+msgstr "Type du programme"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_form
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Program type"
+msgstr "Type du programme"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__project_number
+msgid "Project Number"
+msgstr "Numéro du projet"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__psycho_motor
+msgid "Psycho Motor"
+msgstr "Psychomotricité"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__psychologist
+msgid "Psychologist"
+msgstr "Psychologue"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__activity_user_id
+msgid "Responsible User"
+msgstr "Utilisateur responsable"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Erreur de livraison de SMS"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__section_name
+msgid "Section Name"
+msgstr "Nom de la section"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Section name"
+msgstr "Nom de la section"
+
+#. module: beneficiary
+#: model:ir.ui.menu,name:beneficiary.section_menu_item
+msgid "Sections"
+msgstr "Sections"
+
+#. module: beneficiary
+#: model:ir.model.fields.selection,name:beneficiary.selection__beneficiary__program_type__special_education
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_form
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Special education"
+msgstr "Education spéciale"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__speech_therapy
+msgid "Speech Therapy"
+msgstr "Orthophonie"
+
+#. module: beneficiary
+#: model:ir.model.fields,help:beneficiary.field_beneficiary__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Still in the waiting list"
+msgstr "Toujours sur la liste d'attente"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Subscribed"
+msgstr "Inscrit"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__subscription_status
+msgid "Subscription Status"
+msgstr "Etat d'inscription"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Subscription status"
+msgstr "Etat d'inscription"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__technical_component
+msgid "Technical Component"
+msgstr "Composant technique"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Technical component"
+msgstr "Composant technique"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary_line__title
+msgid "Title"
+msgstr "Titre"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__type_of_coverage
+msgid "Type Of Coverage"
+msgstr "Type de couverture"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Type of coverage"
+msgstr "Type de couverture"
+
+#. module: beneficiary
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_form
+msgid "Type of intervention"
+msgstr "Type d'intervention"
+
+#. module: beneficiary
+#: model:ir.model.fields,help:beneficiary.field_beneficiary__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Type de l'activité exceptionnelle enregistrée"
+
+#. module: beneficiary
+#: model:ir.model.fields,field_description:beneficiary.field_beneficiary__unit
+#: model_terms:ir.ui.view,arch_db:beneficiary.beneficiary_view_search
+msgid "Unit"
+msgstr "Unité"
+
+#. module: beneficiary
+#: model:ir.model.fields.selection,name:beneficiary.selection__beneficiary__subscription_status__waiting_list
+msgid "Waiting list"
+msgstr "Liste d'attente"
+
+#. module: beneficiary
+#: model:ir.model.fields.selection,name:beneficiary.selection__beneficiary__direct_support__yes
+msgid "Yes"
+msgstr "Oui"
+
+#. module: beneficiary
+#: model:ir.model,name:beneficiary.model_beneficiary_line
+msgid "beneficiary.line"
+msgstr "bénéficiaire.ligne"
+
+#. module: beneficiary
+#: model:ir.model,name:beneficiary.model_disability
+msgid "disability"
+msgstr "handicap"
+
+#. module: beneficiary
+#: model:ir.actions.act_window,name:beneficiary.disability_action
+msgid "disability action"
+msgstr "action handicap"
+
+#. module: beneficiary
+#: model:ir.model,name:beneficiary.model_section
+msgid "section"
+msgstr "section"
+
+#. module: beneficiary
+#: model:ir.actions.act_window,name:beneficiary.section_action
+msgid "section action"
+msgstr "action section"
