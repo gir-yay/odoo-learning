@@ -107,13 +107,14 @@
                        </page>
                        <page string="Program type">
                            <group>
-                               <group string="Inclusive education">
+                               <group string="Inclusive education" invisible="program_type != 'inclusive_education'">
                                    <field name="unit"/>
                                    <field name="section_name" widget="many2many_tags"/>
                                    <field name="caregiver_name"/>
                                    <field name="technical_component"/>
+                                   <field name="massar_number"/>
                                </group>
-                               <group string="Special education">
+                               <group string="Special education" invisible="program_type != 'special_education'">
                                    <field name="massar_number"/>
                                    <field name="grade_level"/>
                                    <field name="institution_name"/>
