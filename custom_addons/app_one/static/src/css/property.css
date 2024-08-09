@@ -1,7 +1,0 @@
-.custom_header table thead > tr > th {
-    background-color:#0b97c4 !important;
-}
-
-.custom_header table thead > tr > th:nth-child(2) {
-    background-color:#4e3575 !important;
-}
